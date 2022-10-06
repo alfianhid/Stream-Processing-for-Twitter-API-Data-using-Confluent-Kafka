@@ -17,11 +17,16 @@ pip install tweepy
 1. Setup your Twitter Developer account to the Elevated level
 2. Open your app project on Twitter Developer portal and copy the Bearer Token
 3. Paste the Bearer Token to kafka_producer.py (line 23)
-4. Open terminal and write
+4. Activate Docker, open terminal, and write
+```
+docker-compose build
+docker-compose up
+```
+5. Open new terminal and write
 ```
 python3 kafka_producer.py
 ```
-5. Open new terminal and write
+6. Open new terminal and write
 ```
 python3 kafka_consumer.py
 ```
